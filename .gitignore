@@ -1,0 +1,6 @@
+.DS_Store
+Insomnia.app/
+Insomnia.zip
+build/
+*.xcodeproj
+.swiftpm
