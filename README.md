@@ -29,7 +29,7 @@ Requires macOS 12+ and [Xcode Command Line Tools](https://developer.apple.com/do
 (`xcode-select --install` if you don't have them).
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Panoplos/Insomnia/main/install-from-source.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Panoplos/Insomnia/master/install-from-source.sh | bash
 ```
 
 This clones the repo to a temp dir, builds `Insomnia.app`, installs it to
