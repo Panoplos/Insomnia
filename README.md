@@ -47,6 +47,17 @@ cd Insomnia
 
 ## Uninstall
 
+```bash
+curl -fsSL https://raw.githubusercontent.com/Panoplos/Insomnia/master/uninstall.sh | bash
+```
+
+(or run `./uninstall.sh` from a clone). It removes the app, preferences, and
+the sudoers rule; the password prompt appears only if the rule exists. If
+"Launch at Login" was enabled, a dead entry may linger under
+System Settings > Login Items — inert, delete it there manually.
+
+Manual uninstall:
+
 1. Menu: uncheck **Launch at Login**, then Quit
 2. Remove the app: `rm -rf /Applications/Insomnia.app`
 3. Remove the sudoers rule: `sudo rm /etc/sudoers.d/insomnia`
@@ -70,4 +81,5 @@ main.swift                  # the entire app (~170 lines)
 build.sh                    # builds Insomnia.app, runs self-checks
 install.sh                  # installs the built app to /Applications
 install-from-source.sh      # curl|bash bootstrap: clone + build + install
+uninstall.sh                # full removal: app, prefs, sudoers rule
 ```
